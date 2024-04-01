@@ -50,13 +50,12 @@ if (pinAnswer.pin === myPin) // Pin Comparison
         let cashDeposited = await inquirer.prompt([
             {
                 name: "depositCash",
-                type: "input",
+                type: "number",
                 message: " Enter the Amount which you want to deposit...",
             },
         ]);
-        console.log(`You Deposited Rs: ${cashDeposited.depositCash}`);
-        let newBal = myBal + cashDeposited.depositCash;
-        console.log(newBal);
+        myBal += cashDeposited.depositCash;
+        console.log(` You Deposited Rs: ${cashDeposited.depositCash} \n Your New Account Balance is: ${myBal}`);
     }
     //Fast Cash
     else if (operationAns.operation === "Fast Cash") {
@@ -86,5 +85,5 @@ if (pinAnswer.pin === myPin) // Pin Comparison
     }
 } // pin comparison 
 else {
-    console.log("Incorrect");
+    console.log("INCORRECT PIN");
 }
