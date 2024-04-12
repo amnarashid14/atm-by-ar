@@ -1,11 +1,11 @@
 {
-  "name": "@arscodinghub/atm",
-  "version": "1.0.0",
+  "name": "@arscodinghub/atmbyar",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "types": "inquirer",
-  "bin": "index.js",
+  "bin": "atmt.js",
   "publishConfig": {"access": "public"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
